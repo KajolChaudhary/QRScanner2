@@ -36,7 +36,6 @@ public class ZBar extends CordovaPlugin {
             } else {
                 isInProgress = true;
                 scanCallbackContext = callbackContext;
-                tempCallBack = callbackContext;
                 JSONObject params = args.optJSONObject(0);
 
                 Context appCtx = cordova.getActivity().getApplicationContext();
@@ -72,7 +71,6 @@ public class ZBar extends CordovaPlugin {
             }
             isInProgress = false;
 //            scanCallbackContext = null;
-//            tempCallBack = null;
         }
     }
 }
