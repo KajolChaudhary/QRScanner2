@@ -200,6 +200,9 @@ public class ZBarScannerActivity extends Activity
                 //setResult(BTN_LOGIN);
                 if (ZBar.scanCallbackContext != null) {
                     ZBar.scanCallbackContext.success("Login_Click");
+                    if (ZBar.tempCallBack != null) {
+                        ZBar.scanCallbackContext = ZBar.tempCallBack;
+                    }
                 }
             }
         });

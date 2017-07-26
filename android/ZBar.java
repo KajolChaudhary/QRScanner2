@@ -22,20 +22,21 @@ public class ZBar extends CordovaPlugin {
 
     private boolean isInProgress = false;
     public static CallbackContext scanCallbackContext;
+    public static CallbackContext tempCallBack;
 
 
     // Plugin API ------------------------------------------------------
 
     @Override
-    public boolean execute (String action, JSONArray args, CallbackContext callbackContext)
-    throws JSONException
-    {
-        if(action.equals("scan")) {
-            if(isInProgress) {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext)
+            throws JSONException {
+        if (action.equals("scan")) {
+            if (isInProgress) {
                 callbackContext.error("A scan is already in progress!");
             } else {
                 isInProgress = true;
                 scanCallbackContext = callbackContext;
+                tempCallBack = callbackContext;
                 JSONObject params = args.optJSONObject(0);
 
                 Context appCtx = cordova.getActivity().getApplicationContext();
@@ -53,10 +54,9 @@ public class ZBar extends CordovaPlugin {
     // External results handler ----------------------------------------
 
     @Override
-    public void onActivityResult (int requestCode, int resultCode, Intent result)
-    {
-        if(requestCode == SCAN_CODE) {
-            switch(resultCode) {
+    public void onActivityResult(int requestCode, int resultCode, Intent result) {
+        if (requestCode == SCAN_CODE) {
+            switch (resultCode) {
                 case Activity.RESULT_OK:
                     String barcodeValue = result.getStringExtra(ZBarScannerActivity.EXTRA_QRVALUE);
                     scanCallbackContext.success(barcodeValue);
@@ -72,6 +72,7 @@ public class ZBar extends CordovaPlugin {
             }
             isInProgress = false;
 //            scanCallbackContext = null;
+//            tempCallBack = null;
         }
     }
 }
