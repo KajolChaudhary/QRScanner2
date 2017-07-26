@@ -17,7 +17,7 @@ public class ZBar extends CordovaPlugin {
     // Configuration ---------------------------------------------------
 
     private static int SCAN_CODE = 1;
-    private static int BTN_LOGIN = 987;
+    private int BTN_LOGIN = 987;
 
     // State -----------------------------------------------------------
 

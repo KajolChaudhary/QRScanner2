@@ -192,7 +192,7 @@ public class ZBarScannerActivity extends Activity
         // Add preview SurfaceView to the screen
         FrameLayout scannerView = (FrameLayout) findViewById(getResourceId("id/csZbarScannerView"));
         scannerView.addView(scannerSurface);
-        Button btnLogin = (FrameLayout) findViewById(getResourceId("id/btnLogin"));
+        Button btnLogin = (Button) findViewById(getResourceId("id/btnLogin"));
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
