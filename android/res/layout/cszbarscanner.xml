@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#ECECEC">
+
+  <FrameLayout
+    android:id="@+id/csZbarScannerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/rlSearch"
+    android:background="@color/csZbarScannerBackground">
+
+
+    <TextView
+      android:id="@+id/csZbarScannerInstructions"
+      android:layout_width="296dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center|bottom"
+      android:fontFamily="sans-serif-light"
+      android:gravity="center"
+      android:paddingBottom="15dp"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:paddingTop="5dp"
+      android:text="@string/csZbarScannerInstructions"
+      android:textColor="@color/csZbarScannerTextColor"
+      android:textSize="8pt"/>
+
+    <RelativeLayout
+      android:id="@+id/csZbarScannerSightContainer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal|bottom">
+
+      <View
+        android:id="@+id/csZbarScannerSight"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ff0000"
+        android:gravity="center_vertical"/>
+
+      <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/csZbarScannerTextBackground"
+        android:longClickable="true"
+        android:onClick="toggleFlash"
+        android:src="@drawable/camera_flash"
+        android:visibility="visible"/>
+
+    </RelativeLayout>
+
+  </FrameLayout>
+
+  <RelativeLayout
+    android:id="@+id/rlSearch"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_above="@+id/btnLogin"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF">
+
+    <EditText
+      android:id="@+id/edtSearch"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:background="@null"
+      android:layout_toLeftOf="@+id/rlImgSearch"
+      android:hint="Search magazine by name"
+      android:padding="10dp"/>
+
+    <RelativeLayout
+      android:id="@+id/rlImgSearch"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:background="#D45104">
+
+      <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_search"/>
+    </RelativeLayout>
+  </RelativeLayout>
+
+  <Button
+    android:id="@+id/btnLogin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="10dp"
+    android:background="#D45104"
+    android:padding="10dp"
+    android:text="LOGIN"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"/>
+</RelativeLayout>
