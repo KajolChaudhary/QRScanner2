@@ -20,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZBar.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZBar.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ZBar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
+            <state relative-caret-position="252">
+              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -40,15 +40,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZBarScannerActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZBarScannerActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ZBarScannerActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="199" column="37" selection-start-line="199" selection-start-column="37" selection-end-line="199" selection-end-column="37" />
+            <state relative-caret-position="133">
+              <caret line="201" column="63" selection-start-line="201" selection-start-column="63" selection-end-line="201" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6796#6797#0" expanded="true" />
-                <element signature="e#6848#6849#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -332,8 +330,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6796#6797#0" expanded="true" />
-            <element signature="e#6848#6849#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -354,23 +350,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZBarScannerActivity.java">
+    <entry file="file://$PROJECT_DIR$/ZBar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="199" column="37" selection-start-line="199" selection-start-column="37" selection-end-line="199" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6796#6797#0" expanded="true" />
-            <element signature="e#6848#6849#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ZBar.java">
+    <entry file="file://$PROJECT_DIR$/ZBarScannerActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="133">
+          <caret line="201" column="63" selection-start-line="201" selection-start-column="63" selection-end-line="201" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
