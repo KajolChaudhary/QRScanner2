@@ -61,6 +61,7 @@ public class ZBarScannerActivity extends Activity
     public static final String EXTRA_PARAMS = "params";
     public static final int RESULT_ERROR = RESULT_FIRST_USER + 1;
     private static final int CAMERA_PERMISSION_REQUEST = 1;
+    public static final int BTN_LOGIN = 9;
     // State -----------------------------------------------------------
 
     private Camera camera;
@@ -196,7 +197,7 @@ public class ZBarScannerActivity extends Activity
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setResult(987);
+                setResult(BTN_LOGIN);
             }
         });
 

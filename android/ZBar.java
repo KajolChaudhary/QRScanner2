@@ -68,7 +68,7 @@ public class ZBar extends CordovaPlugin {
                 case ZBarScannerActivity.RESULT_ERROR:
                     scanCallbackContext.error("Scan failed due to an error");
                     break;
-                case BTN_LOGIN:
+                case ZBarScannerActivity.BTN_LOGIN:
                     scanCallbackContext.success("Login_Click");
                     break;
                 default:
