@@ -22,8 +22,6 @@ public class ZBar extends CordovaPlugin {
 
     private boolean isInProgress = false;
     public static CallbackContext scanCallbackContext;
-    public static CallbackContext tempCallBack;
-
 
     // Plugin API ------------------------------------------------------
 
