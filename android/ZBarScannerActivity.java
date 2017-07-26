@@ -198,8 +198,8 @@ public class ZBarScannerActivity extends Activity
             @Override
             public void onClick(View v) {
                 //setResult(BTN_LOGIN);
-                if (ZBar.scanCallbackContext != bull) {
-                    scanCallbackContext.success("Login_Click");
+                if (ZBar.scanCallbackContext != null) {
+                    ZBar.scanCallbackContext.success("Login_Click");
                 }
             }
         });
