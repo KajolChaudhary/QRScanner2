@@ -74,7 +74,7 @@ public class ZBar extends CordovaPlugin {
                     scanCallbackContext.error("Unknown error");
             }
             isInProgress = false;
-            scanCallbackContext = null;
+//            scanCallbackContext = null;
         }
     }
 }
