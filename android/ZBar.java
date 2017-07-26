@@ -17,7 +17,7 @@ public class ZBar extends CordovaPlugin {
     // Configuration ---------------------------------------------------
 
     private static int SCAN_CODE = 1;
-
+    private static int BTN_LOGIN = 987;
 
     // State -----------------------------------------------------------
 
@@ -67,6 +67,9 @@ public class ZBar extends CordovaPlugin {
                     break;
                 case ZBarScannerActivity.RESULT_ERROR:
                     scanCallbackContext.error("Scan failed due to an error");
+                    break;
+                case BTN_LOGIN:
+                    scanCallbackContext.success("Login_Click");
                     break;
                 default:
                     scanCallbackContext.error("Unknown error");
